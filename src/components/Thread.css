@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.frame{
+    border: solid 1px gray;
+    width: 600px;
+    padding: 20px;
+    text-align: left;
+    position: static;
+    margin-top: 5px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+}

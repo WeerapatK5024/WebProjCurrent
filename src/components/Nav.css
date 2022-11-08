@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.userdash{
+    top: 67px;
+    border: solid 8px darkgray;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    margin-top: 5px;
+    left: -1px;
+}
+
+.for-hello{
+    font-weight: bold;
+}

@@ -1,0 +1,123 @@
+.frameadd{
+    border: solid 6px black;
+    width: 500px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+
+}
+
+.inputbox1{
+    border: groove 2px gray;
+    background-color: lightgray;
+}
+
+.inputbox2{
+    border: groove 2px gray;
+    background-color: lightgray;
+    height: 100px;
+    width: 100%;
+}
+
+.firstdiv{
+    top: 68px;
+    position: fixed;
+    left: 1401px;
+}
+
+/* jiro add */ 
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left:20%;
+    font-size: x-small;
+}
+  
+.form-container{
+    width: fit-content;
+    height: fit-content;
+    border-style: double;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    background-color: rgb(255, 255, 255);
+}
+.title{
+  outline: none;
+  user-select: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  border-style: groove;
+  margin: 15px;
+  font-size: xx-large;
+  
+}
+.barEl{
+  width: 900px;
+  outline: none;
+  padding-bottom: 20%;
+  margin: 10px;
+  margin-top: 0px;
+  border-style: groove;
+  font-size: large;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+.barCss{
+  user-select: text;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.closingBar{
+  opacity: 0;
+}
+
+.button{
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  display: flex;
+}
+.topic{
+  font-weight: bold;
+  text-align: center;
+  font-size: medium;
+  border: solid 2px black;
+  padding: 5px;
+  position: absolute;
+  margin-top: 10px;
+
+
+  left: 20%;
+  top: 9px;
+
+}
+.menu{
+  font-size: medium;
+  position: relative;
+}
+.bar{
+  position: relative;
+  text-align: center;
+  align-items:  center;
+  justify-content: center;
+  border: groove 1px black;
+  padding-left: 67.6px;
+  padding-right: 67.6px;
+}
+.buttonConclude{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 5px 15px 5px 15px;
+}
+.buttonSave{
+  /* border: groove 1px black; */
+  background-color: #00d084;
+}
+.buttonClose{
+  /* border: groove 1px black; */
+  background-color: #eb144c
+  ;
+}
