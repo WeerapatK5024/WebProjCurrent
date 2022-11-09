@@ -20,6 +20,7 @@ const AddThread = () => {
 
     useEffect(() => {
         getData();
+        console.log(posts);
     }, []);
 
     useEffect(() => {
@@ -31,20 +32,20 @@ const AddThread = () => {
             if (!query.empty) {
                 const docPosts = [];
                 query.forEach(doc => {
-                    docPosts.push(doc.data().data);
+                    docPosts.push(doc.data());
                 });
-                setPosts(doc.data().data);
+                setPosts(docPosts);
             }
         })
     }
 
-    const addData = (dat) => {
+    const addData = (data) => {
         if (user !== null && user !== undefined) {
             getDoc(doc(db, 'Posts', user.uid)).then(docc => {
                 if (docc.exists()) {
                     if (docc.data()?.data) {
                         const doc_data = docc.data().data;
-                        doc_data.push(dat);
+                        doc_data.push(data);
                         console.log(doc_data);
                         setDoc(doc(db, 'Posts', docc.id), doc_data).then(msg => {
                             //alert("Post Successfully");
@@ -54,10 +55,10 @@ const AddThread = () => {
                 else {
                     console.log("No data");
                     const doc_data = [];
-                    doc_data.push(dat);
+                    doc_data.push(data);
                     console.log(doc_data);
-                    setDoc(doc(db, 'Posts', user.uid.toString()),{"data": [{title:"Goddd",content:"GGGG"}]}).then(msg => {
-                        //alert("Post Successfully");
+                    setDoc(doc(db, 'Posts', user.uid.toString()),{title:"Test",content:"COntent-"}).then(msg => {
+                        // alert("Post Successfully");
                     })
                 }
             })
@@ -129,7 +130,7 @@ const AddThread = () => {
             if (item != top)
                 $(item).style.backgroundColor = 'white';
             else
-                $(item).style.backgroundColor = 'rgb(206, 246, 255)';
+                $(item).style.backgroundColor = '#f9e3a3';
         }
         const find_desc = ["postElement", "imageElement", "linkElement"
             , "pollElement", "talkElement"];
@@ -164,7 +165,7 @@ const AddThread = () => {
     return (
         <div>
 
-            <button className="topic" onClick={openForm} id='creatPost'>+ Create Post</button>
+            <button className="topic text-white rounded-lg" onClick={openForm} id='creatPost'>+ Create Post</button>
             <div className="form-popup" id="myForm">
                 <form className="form-container" onSubmit={addThread}>
                     <input className="title"
@@ -193,7 +194,7 @@ const AddThread = () => {
                             <img src={poll} />
                             <b>Poll</b>
                         </button>
-                        <button type="button" className="bar cursor-not-allowed" onClick={talkClicking} id="talk">
+                        <button type="button" className="bar2 cursor-not-allowed" onClick={talkClicking} id="talk">
                             <img src={talk} />
                             <b>Talk</b>
                         </button>

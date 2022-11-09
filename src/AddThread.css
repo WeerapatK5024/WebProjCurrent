@@ -39,7 +39,7 @@
     height: fit-content;
     border-style: double;
     border-radius: 50px;
-    border: 2px solid #000000;
+    border: 4px solid #1a2634;
     background-color: rgb(255, 255, 255);
 }
 .title{
@@ -83,7 +83,7 @@
   font-weight: bold;
   text-align: center;
   font-size: medium;
-  border: solid 2px black;
+  border: solid 2px white;
   padding: 5px;
   position: absolute;
   margin-top: 10px;
@@ -102,9 +102,21 @@
   text-align: center;
   align-items:  center;
   justify-content: center;
-  border: groove 1px black;
+  border-top: groove 2px black;
+  border-bottom: groove 2px black;
+  border-right:groove 2px black ;
   padding-left: 67.6px;
   padding-right: 67.6px;
+}
+.bar2{
+    position: relative;
+    text-align: center;
+    align-items:  center;
+    justify-content: center;
+    border-top: groove 2px black;
+    border-bottom: groove 2px black;
+    padding-left: 67.6px;
+    padding-right: 67.6px;
 }
 .buttonConclude{
   margin-left: 5px;

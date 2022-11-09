@@ -1,4 +1,4 @@
-    import React , {useState, useContext} from 'react';
+import React , {useState, useContext} from 'react';
 import { ThreadContext } from '../ThreadContext';
 import Thread from './Thread';
 

@@ -39,7 +39,7 @@ function App() {
       <ThreadProvider>
         <div>
           <div className="Headder">
-            <div className="homeText">HOME / PAGE</div>
+            <div className="homeText text-[#eec550]">HOME / PAGE</div>
           </div>
           <div className="mainFrame">
             <div>

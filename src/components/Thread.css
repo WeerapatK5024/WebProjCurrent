@@ -5,9 +5,9 @@
 
 
 .frame{
-    border: solid 1px gray;
+    border: solid 4px #1a2634;
     width: 600px;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: left;
     position: static;
     margin-top: 5px;

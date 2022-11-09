@@ -19,7 +19,7 @@ const Nav = () => {
                         signIn();
                     }}
                     
-                >SignIn</button>
+                >Sign In with Google</button>
                 
                 </>
             )
@@ -31,7 +31,7 @@ const Nav = () => {
                     onClick={() => {
                         logout();
                     }}
-                >SignOut</button>
+                ><a className='ml-9 mr-9'>Sign Out</a></button>
             )
         }
     }
