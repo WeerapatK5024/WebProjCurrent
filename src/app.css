@@ -50,6 +50,7 @@
     padding: 0px 50px;
     color: white;
     border-bottom:8px solid #eec550;
+    position: relative;
   }
   
   .mainFrame{

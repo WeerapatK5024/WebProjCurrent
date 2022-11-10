@@ -85,7 +85,7 @@
   font-size: medium;
   border: solid 2px white;
   padding: 5px;
-  position: absolute;
+  position: fixed;
   margin-top: 10px;
 
 

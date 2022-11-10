@@ -164,8 +164,7 @@ const AddThread = () => {
 
     return (
         <div>
-
-            <button className="topic text-white rounded-lg" onClick={openForm} id='creatPost'>+ Create Post</button>
+         <button className="topic text-white rounded-lg " onClick={openForm} id='creatPost'>+ Create Post</button>   
             <div className="form-popup" id="myForm">
                 <form className="form-container" onSubmit={addThread}>
                     <input className="title"

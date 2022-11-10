@@ -4,6 +4,7 @@ import Thread from './Thread';
 
 const ThreadList = () => {
     const [threads , setThreads] = useContext(ThreadContext);
+
   
     return(
         <div>
